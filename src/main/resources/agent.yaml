@@ -1,0 +1,13 @@
+reporting:
+  enabled: true
+  project-key: CR1
+  server:
+    hostname: https://solvdinternal.zebrunner.com
+    access-token: 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
+  run:
+    retry-known-issues: false
+    treat-skips-as-failures: false
+    test-case-status:
+      on-pass: passed
+      on-fail: failed
+      on-skip: retest

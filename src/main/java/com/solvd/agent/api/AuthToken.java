@@ -35,7 +35,6 @@ public class AuthToken {
             instance = new AuthToken();
             Path filePath = Paths.get(p.getProperty("api_url"), p.getProperty("auth_endpoint"));
             instance.authToken = RestApiWrapper.getAuthToken(filePath.toString(), p.getProperty("api_token"));
-
         }
         return instance;
     }

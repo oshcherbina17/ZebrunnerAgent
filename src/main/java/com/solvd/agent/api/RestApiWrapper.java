@@ -24,7 +24,7 @@ public class RestApiWrapper {
         return response;
     }
 
-    public static String getAuthToken(String url, String access_token) {
+    public static String getAuthToken (String url, String access_token){
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("refreshToken", access_token);
 
